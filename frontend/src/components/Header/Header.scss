@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  background-color: $orange;
+  height: 158px;
+  padding: 1.2rem 1.8rem;
+  gap: .3rem;
+
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        position: relative;
+        top: 15px;
+    }
+
+  }
+
+  .search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      position: absolute;
+      color: $inputGray;
+      left: 12px;
+    }
+
+    input {
+      border: 0;
+      border-radius: 1rem;
+      padding: 0.5rem 2rem;
+      width: 100%;
+      color: $inputGray;
+
+      &::placeholder {
+        color: $inputGray;
+      }
+    }
+  }
+}

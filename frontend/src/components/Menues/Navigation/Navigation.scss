@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  gap: 1rem;
+  font-size: 13px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    overflow: scroll;
+    gap: 0.8rem;
+    padding-inline: 1.3rem;
+    margin-inline: -1.3rem;
+    color: $navFontColor;
+
+    &::-webkit-scrollbar {
+      width: 0rem;
+      height: 0;
+      color: transparent;
+      background-color: transparent;
+      display: none;
+    }
+
+    li {
+      background-color: $navGray;
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.6rem;
+
+      transition: 0.2s ease-in-out;
+
+      &:hover,
+      .active {
+        background-color: $orange;
+        color: white;
+      }
+    }
+  }
+  .navBottom {
+    display: flex;
+    justify-content: space-between;
+    color: $darkerFontGray;
+
+    .deliveryOptions {
+        border: 1px solid $darkerFontGray;
+        border-radius: 1rem;
+        padding: 2px 7px;
+    }
+  }
+}
