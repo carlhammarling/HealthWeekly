@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navigation.scss"
+import NavItem from './NavItem/NavItem'
 
-const Navigation = () => {
+const Navigation = ({ setSelectCategory }) => {
+
+    const [foodCategories, setFoodCategories] = useState([
+        "All",
+        "Fish",
+        "Vegeterian",
+        "LCHF",
+        "Chicken",
+        "Meat"
+    ])
+
+    
   return (
     <nav className='navigation'>
         <ul>
-            <li>All</li>
-            <li>Fish</li>
-            <li>Vegeterian</li>
-            <li>LCHF</li>
-            <li>Chicken</li>
-            <li>Meat</li>
+            {foodCategories && foodCategories.map((cat, index)=> (
+                <NavItem key={index} setSelectCategory={setSelectCategory} cat={cat} />
+            ))}
         </ul>
         <div className='navBottom'>
             <div className="sorting">

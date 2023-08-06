@@ -8,9 +8,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="top">
-        <i class="fa-solid fa-map fa-lg"></i>
+        <i className="fa-solid fa-map fa-lg"></i>
         <img src={HWLogo} alt="Health Weekly" />
-        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+        <i className="fa-solid fa-bag-shopping fa-lg"></i>
       </div>
 
       <div className="search">

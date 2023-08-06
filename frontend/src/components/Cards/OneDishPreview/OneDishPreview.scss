@@ -1,0 +1,11 @@
+.oneDishPreview {
+  display: flex;
+  gap: 1rem;
+  img {
+    height: 113px;
+    width: 113px;
+  }
+  .dishTop {
+    display: flex;
+  }
+}
